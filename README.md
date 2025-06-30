@@ -28,3 +28,6 @@ We encountered a merge conflict when combining both branches into `main`. The co
    ```bash
    git checkout styling
    git pull origin main
+
+   ![image](https://github.com/user-attachments/assets/2bced057-b944-469b-bc29-3607edc5e046)
+

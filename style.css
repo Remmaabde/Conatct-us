@@ -21,4 +21,51 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(12px);
 }
+.container h1 {
+    text-align: center;
+    color: #f4a950;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+.elements {
+    display: flex;
+    flex-direction: column;
+}
+.elements label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #fdfdfd;
+}
+.elements input,
+.elements textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    color: #333;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.elements input:focus,
+.elements textarea:focus {
+    background-color: #fff;
+border: 2px solid #f4a950;
+}
+.elements button {
+    padding: 12px;
+    background-color: #f4a950;
+    color: #222;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+.elements button:hover {
+    background-color: #e4912b;
+}
   

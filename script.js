@@ -1,18 +1,38 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const nameInput = document.getElementById("name");
+  const emailInput = document.querySelector('input[type="email"]');
+  const messageInput = document.getElementById("message");
+  const submitButton = document.getElementById("submit");
 
-document.getElementById("contactForm").addEventListener("submit", function(e){
-    e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+  if (submitButton) {
+    submitButton.addEventListener("click", function (e) {
+      e.preventDefault();
+      submitForm();
+    });
+  }
 
-    if(!name || !email || !message){
-        alert("Please fill in the fields.")
-        return;
+
+  document.addEventListener("keydown", function (e) {
+    const isInput = e.target.tagName === "INPUT";
+    if (e.key === "Enter" && isInput) {
+      e.preventDefault();
+      submitForm();
+    }
+  });
+
+  function submitForm() {
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
+
+    if (!name || !email || !message) {
+      showPopup("Please fill in all the fields.");
+      return;
     }
 
+    showPopup("Thank you for contacting us!");
 
-    alert("Thank you for contacting us!");
 
-    document.getElementById("contactForm").requestFullscreen();
-})
+  }
+});

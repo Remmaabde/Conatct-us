@@ -1,26 +1,24 @@
-body{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container{
-    background-color:rgb(214, 190, 190);
-    display:block;
-    margin:0 auto;
-    width:30rem;
-    padding:10px;
-    border:1px solid gray;
-    border-radius:19px;
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-h1{
-    text-align:center;
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
 }
-label{
-    margin:0 auto;
-}
-input{
-    width:40%;
-    focus-outline:none;
-}
-.elements{
-    padding-left:33%;
-}
+  

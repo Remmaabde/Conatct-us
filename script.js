@@ -35,4 +35,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   }
+
+  function showPopup(message) {
+    let popup = document.createElement("div");
+    popup.className = "custom-popup";
+    popup.innerHTML = `
+      <div class="popup-box">
+        <p>${message}</p>
+        <button id="closePopup">OK</button>
+      </div>
+    `;
+    document.body.appendChild(popup);
+
+    document.getElementById("closePopup").addEventListener("click", () => {
+      popup.remove();
+    });
+
+    setTimeout(() => popup.remove(), 4000);
+  }
 });

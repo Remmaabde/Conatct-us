@@ -31,6 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+        nameInput.value = "";
+    emailInput.value = "";
+    messageInput.value = "";
+
     showPopup("Thank you for contacting us!");
 
   }

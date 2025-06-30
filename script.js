@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     showPopup("Thank you for contacting us!");
 
-
   }
 
   function showPopup(message) {
@@ -45,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <button id="closePopup">OK</button>
       </div>
     `;
+
     document.body.appendChild(popup);
 
     document.getElementById("closePopup").addEventListener("click", () => {
